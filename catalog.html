@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог — Umbra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,200;0,14..32,400;0,14..32,500;1,14..32,200;1,14..32,400;1,14..32,500&family=Pinyon+Script&family=Source+Sans+3:wght@300;400;500;600&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-site="catalog">
+  <div class="page">
+    <header class="site-header site-header--catalog">
+      <div class="top-bar">
+        <div class="top-bar__inner top-bar__inner--catalog top-bar__inner--with-brand">
+          <div class="top-bar__left top-bar__left--catalog">
+            <a href="index.html" class="top-bar__back" aria-label="На главную">←</a>
+            <div class="catalog-burger-wrap">
+              <button
+                type="button"
+                class="catalog-burger"
+                id="catalog-burger"
+                aria-expanded="false"
+                aria-controls="catalog-menu"
+                aria-labelledby="catalog-burger-label"
+              >
+                <span class="catalog-burger__bar" aria-hidden="true"></span>
+                <span class="catalog-burger__bar" aria-hidden="true"></span>
+                <span class="catalog-burger__bar" aria-hidden="true"></span>
+              </button>
+              <span id="catalog-burger-label" class="catalog-burger-label">Категории</span>
+            </div>
+            <nav class="catalog-nav" aria-label="Категории каталога">
+              <a href="#section-palto" class="catalog-nav__link">Пальто</a>
+              <a href="#section-zhakety" class="catalog-nav__link">Жакеты</a>
+              <a href="#section-zhilety" class="catalog-nav__link">Жилеты</a>
+              <a href="#section-bluzy" class="catalog-nav__link">Блузы</a>
+            </nav>
+          </div>
+          <a href="index.html" class="top-bar__brand">Umbra</a>
+          <div class="top-bar__right">
+            <a href="#" class="top-bar__link top-bar__link--cart">Товары в корзине</a>
+          </div>
+        </div>
+      </div>
+      <div id="catalog-menu" class="catalog-menu" aria-hidden="true">
+        <div class="catalog-menu__backdrop" aria-hidden="true"></div>
+        <div class="catalog-menu__panel" role="dialog" aria-modal="true" aria-labelledby="catalog-menu-title">
+          <div class="catalog-menu__head">
+            <span id="catalog-menu-title" class="catalog-menu__title">Категории</span>
+            <button type="button" class="catalog-menu__close" aria-label="Закрыть меню">×</button>
+          </div>
+          <nav class="catalog-menu__nav" aria-label="Категории каталога">
+            <a href="#section-palto" class="catalog-menu__link">Пальто</a>
+            <a href="#section-zhakety" class="catalog-menu__link">Жакеты</a>
+            <a href="#section-zhilety" class="catalog-menu__link">Жилеты</a>
+            <a href="#section-bluzy" class="catalog-menu__link">Блузы</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="plp">
+      <div class="container plp__container">
+        <section id="section-palto" class="plp-section" aria-labelledby="plp-palto-heading">
+          <h2 id="plp-palto-heading" class="plp-section__title">Пальто</h2>
+          <hr class="plp-section__rule" />
+          <ul class="plp-grid">
+            <li>
+              <article class="product-card" data-product-id="coat-1" data-composition="57% шерсть, 43% полиэстер">
+                <div class="product-card__surface">
+                  <a class="product-card__link product-card__link--media" href="#">
+                    <div class="product-card__thumb">
+                      <img src="img/coat_1.png" alt="Двубортное пальто из шерсти" loading="lazy" />
+                    </div>
+                  </a>
+                  <div class="product-card__foot">
+                    <a class="product-card__link product-card__link--text" href="#">
+                      <h3 class="product-card__name">Двубортное пальто из шерсти</h3>
+                      <p class="product-card__price">15 900 руб</p>
+                    </a>
+                    <button type="button" class="product-card__wish" aria-pressed="false" aria-label="Добавить в избранное">♡</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card" data-product-id="coat-2" data-composition="60% шерсть, 40% вискоза">
+                <div class="product-card__surface">
+                  <a class="product-card__link product-card__link--media" href="#">
+                    <div class="product-card__thumb">
+                      <img src="img/coat_2.png" alt="Пальто прямого кроя" loading="lazy" />
+                    </div>
+                  </a>
+                  <div class="product-card__foot">
+                    <a class="product-card__link product-card__link--text" href="#">
+                      <h3 class="product-card__name">Пальто прямого кроя</h3>
+                      <p class="product-card__price">12 400 руб</p>
+                    </a>
+                    <button type="button" class="product-card__wish" aria-pressed="false" aria-label="Добавить в избранное">♡</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section id="section-zhakety" class="plp-section" aria-labelledby="plp-zhakety-heading">
+          <h2 id="plp-zhakety-heading" class="plp-section__title">Жакеты</h2>
+          <hr class="plp-section__rule" />
+          <ul class="plp-grid">
+            <li>
+              <article class="product-card" data-product-id="jacket-1" data-composition="65% полиэстер, 35% вискоза">
+                <div class="product-card__surface">
+                  <a class="product-card__link product-card__link--media" href="#">
+                    <div class="product-card__thumb">
+                      <img src="img/jacket_1.png" alt="Жакет однобортный" loading="lazy" />
+                    </div>
+                  </a>
+                  <div class="product-card__foot">
+                    <a class="product-card__link product-card__link--text" href="#">
+                      <h3 class="product-card__name">Жакет однобортный</h3>
+                      <p class="product-card__price">7 800 руб</p>
+                    </a>
+                    <button type="button" class="product-card__wish" aria-pressed="false" aria-label="Добавить в избранное">♡</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card" data-product-id="jacket-2" data-composition="62% полиэстер, 33% вискоза, 5% эластан">
+                <div class="product-card__surface">
+                  <a class="product-card__link product-card__link--media" href="#">
+                    <div class="product-card__thumb">
+                      <img src="img/jacket_2.png" alt="Жакет удлинённый" loading="lazy" />
+                    </div>
+                  </a>
+                  <div class="product-card__foot">
+                    <a class="product-card__link product-card__link--text" href="#">
+                      <h3 class="product-card__name">Жакет удлинённый</h3>
+                      <p class="product-card__price">8 900 руб</p>
+                    </a>
+                    <button type="button" class="product-card__wish" aria-pressed="false" aria-label="Добавить в избранное">♡</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section id="section-zhilety" class="plp-section" aria-labelledby="plp-zhilety-heading">
+          <h2 id="plp-zhilety-heading" class="plp-section__title">Жилеты</h2>
+          <hr class="plp-section__rule" />
+          <ul class="plp-grid">
+            <li>
+              <article class="product-card" data-product-id="vest-1" data-composition="100% шерсть">
+                <div class="product-card__surface">
+                  <a class="product-card__link product-card__link--media" href="#">
+                    <div class="product-card__thumb">
+                      <img src="img/vest_1.png" alt="Жилет классический" loading="lazy" />
+                    </div>
+                  </a>
+                  <div class="product-card__foot">
+                    <a class="product-card__link product-card__link--text" href="#">
+                      <h3 class="product-card__name">Жилет классический</h3>
+                      <p class="product-card__price">5 400 руб</p>
+                    </a>
+                    <button type="button" class="product-card__wish" aria-pressed="false" aria-label="Добавить в избранное">♡</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card" data-product-id="vest-2" data-composition="40% шерсть, 60% полиэстер">
+                <div class="product-card__surface">
+                  <a class="product-card__link product-card__link--media" href="#">
+                    <div class="product-card__thumb">
+                      <img src="img/vest_2.png" alt="Жилет утеплённый" loading="lazy" />
+                    </div>
+                  </a>
+                  <div class="product-card__foot">
+                    <a class="product-card__link product-card__link--text" href="#">
+                      <h3 class="product-card__name">Жилет утеплённый</h3>
+                      <p class="product-card__price">6 200 руб</p>
+                    </a>
+                    <button type="button" class="product-card__wish" aria-pressed="false" aria-label="Добавить в избранное">♡</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section id="section-bluzy" class="plp-section" aria-labelledby="plp-bluzy-heading">
+          <h2 id="plp-bluzy-heading" class="plp-section__title">Блузы</h2>
+          <hr class="plp-section__rule" />
+          <ul class="plp-grid">
+            <li>
+              <article class="product-card" data-product-id="blouse-1" data-composition="100% шёлк">
+                <div class="product-card__surface">
+                  <a class="product-card__link product-card__link--media" href="#">
+                    <div class="product-card__thumb">
+                      <img src="img/blouse_1.png" alt="Блуза шёлковая" loading="lazy" />
+                    </div>
+                  </a>
+                  <div class="product-card__foot">
+                    <a class="product-card__link product-card__link--text" href="#">
+                      <h3 class="product-card__name">Блуза шёлковая</h3>
+                      <p class="product-card__price">4 100 руб</p>
+                    </a>
+                    <button type="button" class="product-card__wish" aria-pressed="false" aria-label="Добавить в избранное">♡</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card" data-product-id="blouse-2" data-composition="92% шёлк, 8% эластан">
+                <div class="product-card__surface">
+                  <a class="product-card__link product-card__link--media" href="#">
+                    <div class="product-card__thumb">
+                      <img src="img/blouse_2.png" alt="Блуза с воротником-стойкой" loading="lazy" />
+                    </div>
+                  </a>
+                  <div class="product-card__foot">
+                    <a class="product-card__link product-card__link--text" href="#">
+                      <h3 class="product-card__name">Блуза с воротником-стойкой</h3>
+                      <p class="product-card__price">3 650 руб</p>
+                    </a>
+                    <button type="button" class="product-card__wish" aria-pressed="false" aria-label="Добавить в избранное">♡</button>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <footer class="site-footer" id="contacts" aria-labelledby="footer-stores-heading">
+        <div class="site-footer__inner">
+          <div class="site-footer__panel">
+            <h2 id="footer-stores-heading" class="footer__stores-heading">Наши магазины в Санкт-Петербурге</h2>
+            <ul class="stores">
+              <li class="stores__item">
+                <span class="stores__pin" aria-hidden="true">📍</span>
+                <div class="stores__body">
+                  <strong class="stores__name">Центральный бутик</strong>
+                  <p class="stores__address">Невский проспект, д. 85, корпус 2</p>
+                  <p class="stores__hours"><span class="stores__hours-label">Часы работы:</span> ежедневно с 10:00 до 21:00</p>
+                </div>
+              </li>
+              <li class="stores__item">
+                <span class="stores__pin" aria-hidden="true">📍</span>
+                <div class="stores__body">
+                  <strong class="stores__name">Магазин в Кировском районе</strong>
+                  <p class="stores__address">Ленинский проспект, д. 45, ТЦ «Сфера»</p>
+                  <p class="stores__hours"><span class="stores__hours-label">Часы работы:</span> пн–вс с 10:00 до 20:00</p>
+                </div>
+              </li>
+              <li class="stores__item">
+                <span class="stores__pin" aria-hidden="true">📍</span>
+                <div class="stores__body">
+                  <strong class="stores__name">Бутик в Приморском районе</strong>
+                  <p class="stores__address">Комендантский проспект, д. 12, ТРК «Маяк»</p>
+                  <p class="stores__hours"><span class="stores__hours-label">Часы работы:</span> ежедневно с 10:00 до 22:00</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="footer__contact">
+              <div class="footer__contact-header">
+                <span class="footer__contact-icon" aria-hidden="true">📞</span>
+                <h3 class="footer__contact-title">Связь с нами</h3>
+              </div>
+              <p class="footer__contact-lead">Пишите в чат на сайте, звоните:</p>
+              <p class="footer__phone-line">
+                <a href="tel:+78121234567">+7 (812) 123-45-67</a>
+              </p>
+              <p class="footer__hours">Мы отвечаем ежедневно с 9:00 до 21:00</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <div id="product-modal" class="product-modal" role="dialog" aria-modal="true" aria-labelledby="product-modal-title" aria-hidden="true">
+    <div class="product-modal__backdrop" aria-hidden="true"></div>
+    <div class="product-modal__panel">
+      <button type="button" class="product-modal__back" id="product-modal-back" aria-label="Назад">←</button>
+      <div class="product-modal__layout">
+        <div class="product-modal__thumb">
+          <img id="product-modal-img" src="" alt="" width="600" height="800" />
+        </div>
+        <div class="product-modal__info">
+          <h2 id="product-modal-title" class="product-modal__name"></h2>
+          <p id="product-modal-price" class="product-modal__price"></p>
+          <div class="product-modal__sizes">
+            <span class="product-modal__sizes-label">Размер</span>
+            <div class="product-modal__sizes-row">
+              <button type="button" class="product-modal__size is-active" data-size="XS">XS</button>
+              <button type="button" class="product-modal__size" data-size="S">S</button>
+              <button type="button" class="product-modal__size" data-size="M">M</button>
+              <button type="button" class="product-modal__size" data-size="L">L</button>
+              <button type="button" class="product-modal__size-chart" id="product-modal-size-chart">Таблица размеров</button>
+            </div>
+          </div>
+          <button type="button" class="product-modal__add" id="product-modal-add">Добавить в корзину</button>
+          <div>
+            <span class="product-modal__material-label">Состав</span>
+            <p id="product-modal-composition" class="product-modal__material-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="size-chart-modal" class="size-chart-modal" role="dialog" aria-modal="true" aria-labelledby="size-chart-modal-heading" aria-hidden="true">
+    <div class="size-chart-modal__backdrop" aria-hidden="true"></div>
+    <div class="size-chart-modal__panel">
+      <button type="button" class="size-chart-modal__back" id="size-chart-modal-back" aria-label="Назад">←</button>
+      <h2 id="size-chart-modal-heading" class="size-chart-modal__heading">Таблица размеров</h2>
+      <div class="size-chart-modal__table-wrap">
+        <table class="size-chart-table">
+          <tbody>
+            <tr>
+              <th scope="row">Россия</th>
+              <td>XXS</td>
+              <td>XS</td>
+              <td>S</td>
+              <td>M</td>
+              <td>L</td>
+            </tr>
+            <tr>
+              <th scope="row">Европа</th>
+              <td>40</td>
+              <td>42</td>
+              <td>44</td>
+              <td>46</td>
+              <td>48</td>
+            </tr>
+            <tr>
+              <th scope="row">Обхват груди</th>
+              <td>80</td>
+              <td>84</td>
+              <td>88</td>
+              <td>92</td>
+              <td>96</td>
+            </tr>
+            <tr>
+              <th scope="row">Обхват бедер</th>
+              <td>88</td>
+              <td>92</td>
+              <td>96</td>
+              <td>100</td>
+              <td>104</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer__backdrop" aria-hidden="true"></div>
+    <div class="cart-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title">
+      <header class="cart-drawer__header">
+        <button type="button" class="cart-drawer__back" id="cart-drawer-back" aria-label="Закрыть корзину">←</button>
+        <h2 id="cart-drawer-title" class="cart-drawer__title">Товары в корзине</h2>
+        <span class="cart-drawer__header-spacer" aria-hidden="true"></span>
+      </header>
+      <hr class="cart-drawer__rule" />
+      <div class="cart-drawer__body">
+        <ul class="cart-drawer__list" id="cart-drawer-list"></ul>
+        <p class="cart-drawer__empty" id="cart-drawer-empty">Корзина пуста</p>
+      </div>
+      <footer class="cart-drawer__footer" id="cart-drawer-footer" hidden>
+        <div class="cart-drawer__footer-inner">
+          <span class="cart-drawer__footer-label">Итого</span>
+          <div class="cart-drawer__footer-sum" aria-live="polite">
+            <span class="cart-drawer__footer-num" id="cart-drawer-total-num">0</span>
+            <span class="cart-drawer__footer-unit" aria-hidden="true">руб</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="cart.js" defer></script>
+  <script src="catalog.js" defer></script>
+</body>
+</html>

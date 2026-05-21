@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umbra — мода</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,200;0,14..32,400;0,14..32,500;1,14..32,200;1,14..32,400;1,14..32,500&family=Pinyon+Script&family=Source+Sans+3:wght@300;400;500;600&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="top-bar__inner top-bar__inner--with-brand">
+        <div class="top-bar__left">
+          <a href="index.html" class="top-bar__logo" aria-label="На главную"></a>
+          <a href="catalog.html" class="top-bar__link top-bar__link--catalog">Каталог</a>
+        </div>
+        <a href="index.html" class="top-bar__brand">Umbra</a>
+        <div class="top-bar__right">
+          <a href="#" class="top-bar__link top-bar__link--cart">Товары в корзине</a>
+        </div>
+      </div>
+    </div>
+    <div class="brand-title-wrap">
+      <div class="brand-title-row">
+        <span class="brand-title__rule" aria-hidden="true"></span>
+        <h1 class="brand-title">Umbra</h1>
+        <span class="brand-title__rule" aria-hidden="true"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__banner">
+        <div class="hero__visual">
+          <img
+            class="hero__img"
+            src="img/Коллекция главная.jpg"
+            alt="Минималистичная вешалка с одеждой в нейтральных тонах"
+          />
+          <p id="hero-heading" class="hero__tagline">Новая коллекция уже доступна!</p>
+        </div>
+        <div class="hero__cta-strip">
+          <div class="hero__cta">
+            <a class="btn btn--catalog" href="catalog.html">Перейти к каталогу</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__lifestyle">
+        <img
+          class="hero__lifestyle-img"
+          src="img/fall_winter.jpg"
+          alt="Зимний городской образ"
+        />
+        <div class="hero__season-badge">
+          <span class="hero__season-badge__text">Fall/Winter 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog section">
+      <div class="container">
+        <h2 class="catalog__heading">
+          <span class="catalog__heading-text">Каталог</span>
+          <span class="catalog__heading-line" aria-hidden="true"></span>
+        </h2>
+        <ul class="catalog__grid">
+          <li>
+            <a class="catalog-card" href="catalog.html#section-palto">
+              <div class="catalog-card__thumb">
+                <img src="img/Пальто.png" alt="Светлое пальто" loading="lazy" />
+              </div>
+              <span class="catalog-card__label">Пальто <span class="catalog-card__arrow" aria-hidden="true">→</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="catalog-card" href="catalog.html#section-zhakety">
+              <div class="catalog-card__thumb">
+                <img src="img/Жакеты.png" alt="Чёрный жакет" loading="lazy" />
+              </div>
+              <span class="catalog-card__label">Жакеты <span class="catalog-card__arrow" aria-hidden="true">→</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="catalog-card" href="catalog.html#section-zhilety">
+              <div class="catalog-card__thumb">
+                <img src="img/Жилеты.png" alt="Жилет, предметный кадр" loading="lazy" />
+              </div>
+              <span class="catalog-card__label">Жилеты <span class="catalog-card__arrow" aria-hidden="true">→</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="catalog-card" href="catalog.html#section-bluzy">
+              <div class="catalog-card__thumb">
+                <img src="img/Блузы.png" alt="Тёмная блузка" loading="lazy" />
+              </div>
+              <span class="catalog-card__label">Блузы <span class="catalog-card__arrow" aria-hidden="true">→</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="about__inner">
+        <div class="about__media">
+          <img class="about__img about__img--large" src="img/about_us_1.jpg" alt="Витрина бутика" loading="lazy" />
+          <img class="about__img about__img--small" src="img/about_us_2.jpg" alt="Одежда на вешалках в шоуруме" loading="lazy" />
+        </div>
+        <div class="about__content">
+          <h2 id="about-heading" class="about__title">About us</h2>
+          <div class="about__text">
+            <p>Добро пожаловать в UMBRA — ваш персональный гид в мире качественной одежды.</p>
+            <p>Мы стремимся сделать процесс выбора одежды максимально комфортным и приятным.</p>
+            <p>
+              Мы сотрудничаем с брендами, чьи ценности совпадают с нашими: внимание к деталям, уважение к клиенту и приверженность высоким стандартам качества.
+            </p>
+            <p>В UMBRA вы найдёте вещи, которые прослужат не один сезон и станут основой вашего безупречного стиля.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer" id="contacts" aria-labelledby="footer-stores-heading">
+      <div class="site-footer__inner">
+        <div class="site-footer__panel">
+          <h2 id="footer-stores-heading" class="footer__stores-heading">Наши магазины в Санкт-Петербурге</h2>
+          <ul class="stores">
+            <li class="stores__item">
+              <span class="stores__pin" aria-hidden="true">📍</span>
+              <div class="stores__body">
+                <strong class="stores__name">Центральный бутик</strong>
+                <p class="stores__address">Невский проспект, д. 85, корпус 2</p>
+                <p class="stores__hours"><span class="stores__hours-label">Часы работы:</span> ежедневно с 10:00 до 21:00</p>
+              </div>
+            </li>
+            <li class="stores__item">
+              <span class="stores__pin" aria-hidden="true">📍</span>
+              <div class="stores__body">
+                <strong class="stores__name">Магазин в Кировском районе</strong>
+                <p class="stores__address">Ленинский проспект, д. 45, ТЦ «Сфера»</p>
+                <p class="stores__hours"><span class="stores__hours-label">Часы работы:</span> пн–вс с 10:00 до 20:00</p>
+              </div>
+            </li>
+            <li class="stores__item">
+              <span class="stores__pin" aria-hidden="true">📍</span>
+              <div class="stores__body">
+                <strong class="stores__name">Бутик в Приморском районе</strong>
+                <p class="stores__address">Комендантский проспект, д. 12, ТРК «Маяк»</p>
+                <p class="stores__hours"><span class="stores__hours-label">Часы работы:</span> ежедневно с 10:00 до 22:00</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="footer__contact">
+            <div class="footer__contact-header">
+              <span class="footer__contact-icon" aria-hidden="true">📞</span>
+              <h3 class="footer__contact-title">Связь с нами</h3>
+            </div>
+            <p class="footer__contact-lead">Пишите в чат на сайте, звоните:</p>
+            <p class="footer__phone-line">
+              <a href="tel:+78121234567">+7 (812) 123-45-67</a>
+            </p>
+            <p class="footer__hours">Мы отвечаем ежедневно с 9:00 до 21:00</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  </div>
+
+  <div id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer__backdrop" aria-hidden="true"></div>
+    <div class="cart-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title">
+      <header class="cart-drawer__header">
+        <button type="button" class="cart-drawer__back" id="cart-drawer-back" aria-label="Закрыть корзину">←</button>
+        <h2 id="cart-drawer-title" class="cart-drawer__title">Товары в корзине</h2>
+        <span class="cart-drawer__header-spacer" aria-hidden="true"></span>
+      </header>
+      <hr class="cart-drawer__rule" />
+      <div class="cart-drawer__body">
+        <ul class="cart-drawer__list" id="cart-drawer-list"></ul>
+        <p class="cart-drawer__empty" id="cart-drawer-empty">Корзина пуста</p>
+      </div>
+      <footer class="cart-drawer__footer" id="cart-drawer-footer" hidden>
+        <div class="cart-drawer__footer-inner">
+          <span class="cart-drawer__footer-label">Итого</span>
+          <div class="cart-drawer__footer-sum" aria-live="polite">
+            <span class="cart-drawer__footer-num" id="cart-drawer-total-num">0</span>
+            <span class="cart-drawer__footer-unit" aria-hidden="true">руб</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="cart.js" defer></script>
+</body>
+</html>
