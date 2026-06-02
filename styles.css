@@ -9,10 +9,10 @@
   --bg-muted: #e8e4e0;
   --about-bg: #d9d9d9;
   /* About us: заголовок и текст (макет Figma) */
-  --about-title-fs: 64px;
+  --about-title-fs: 48px;
   --about-title-color: #454443;
   --about-title-max-w: 672px;
-  --about-text-fs: 39px;
+  --about-text-fs: 38px;
   --about-text-color: #000000;
   --about-text-max-w: 811px;
   --grey-line: #d9d9d9;
